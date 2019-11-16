@@ -270,6 +270,11 @@ class DCGAN:
             if not os.path.exists(path):
                 os.makedirs(path)
             imsave(path + f"/{modifier}_{i}.png", img_array)
+            
+image_size = (128,128)
+thresholds = [0.6,1]
+dcgan = DCGAN(os.path.join(os.getcwd(),'generator_weights'),os.path.join(os.getcwd(),'discriminator_weights'),os.path.join(os.getcwd(),'test_gans'),image_size)
+dcgan.train(epochs = 5000, image_path = os.path.join(path2, '*.Jpg') ,batch_size=128,save_interval=100)
 
 path_image = os.path.join(os.getcwd(),'test_gans')
 c = os.listdir(path_image)
