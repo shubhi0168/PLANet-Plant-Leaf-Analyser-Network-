@@ -1,0 +1,37 @@
+Apple   Apple scab : {'R_l': 0, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Apple   Black rot : {'R_l': 4, 'G_l': 6, 'B_l': 9, 'R_h': 111, 'G_h': 255, 'B_h': 255}
+Apple   healthy : {'R_l': 16, 'G_l': 10, 'B_l': 10, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Cherry (including sour)   healthy : {'R_l': 17, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Cherry (including sour)   Powdery mildew : {'R_l': 33, 'G_l': 12, 'B_l': 20, 'R_h': 114, 'G_h': 255, 'B_h': 231}
+Corn (maize)   Cercospora leaf spot Gray leaf spot : {'R_l': 12, 'G_l': 12, 'B_l': 17, 'R_h': 114, 'G_h': 255, 'B_h': 231}
+Corn (maize)   Common rust : {'R_l': 0, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Corn (maize)   healthy : {'R_l': 0, 'G_l': 0, 'B_l': 0, 'R_h': 255, 'G_h': 255, 'B_h': 255}
+Corn (maize)   Northern Leaf Blight : {'R_l': 0, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Grape   Black rot : {'R_l': 14, 'G_l': 20, 'B_l': 40, 'R_h': 94, 'G_h': 255, 'B_h': 255}
+Grape   Esca (Black Measles) : {'R_l': 6, 'G_l': 21, 'B_l': 20, 'R_h': 91, 'G_h': 255, 'B_h': 255}
+Grape   healthy : {'R_l': 34, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Grape   Leaf blight (Isariopsis Leaf Spot) : {'R_l': 6, 'G_l': 63, 'B_l': 34, 'R_h': 93, 'G_h': 255, 'B_h': 255}
+Blueberry   healthy : {'R_l': 0, 'G_l': 19, 'B_l': 20, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Orange   Haunglongbing (Citrus greening) : {'R_l': 14, 'G_l': 28, 'B_l': 34, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Peach   Bacterial spot : {'R_l': 0, 'G_l': 21, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Peach   healthy : {'R_l': 14, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Pepper, bell   Bacterial spot : {'R_l': 16, 'G_l': 20, 'B_l': 23, 'R_h': 108, 'G_h': 255, 'B_h': 231}
+Pepper, bell   healthy : {'R_l': 23, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Potato   Early blight : {'R_l': 0, 'G_l': 15, 'B_l': 39, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Potato   healthy : {'R_l': 9, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Potato   Late blight : {'R_l': 7, 'G_l': 7, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Raspberry   healthy : {'R_l': 23, 'G_l': 13, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Soybean   healthy : {'R_l': 25, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Squash   Powdery mildew : {'R_l': 15, 'G_l': 20, 'B_l': 80, 'R_h': 105, 'G_h': 255, 'B_h': 255}
+Tomato   Bacterial spot : {'R_l': 21, 'G_l': 49, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Early blight : {'R_l': 13, 'G_l': 28, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   healthy : {'R_l': 0, 'G_l': 25, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Late blight : {'R_l': 13, 'G_l': 48, 'B_l': 0, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Leaf Mold : {'R_l': 17, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Septoria leaf spot : {'R_l': 16, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Spider mites Two-spotted spider mite : {'R_l': 17, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Target Spot : {'R_l': 15, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Tomato mosaic virus : {'R_l': 0, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Tomato   Tomato Yellow Leaf Curl Virus : {'R_l': 29, 'G_l': 43, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
+Apple   Cedar apple rust : {'R_l': 19, 'G_l': 34, 'B_l': 36, 'R_h': 101, 'G_h': 255, 'B_h': 255}
+Strawberry   healthy : {'R_l': 0, 'G_l': 10, 'B_l': 36, 'R_h': 100, 'G_h': 255, 'B_h': 255}
