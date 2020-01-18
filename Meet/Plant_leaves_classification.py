@@ -12,7 +12,9 @@ from PIL import Image
 import tensorflow as tf
 from tensorflow import keras
 from keras import backend as K
-from keras.callbacks import ModelCheckpoint
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
+from tensorflow.keras import optimizers
+from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 
 K.clear_session()
@@ -47,7 +49,8 @@ model = tf.keras.models.Sequential([
    tf.keras.layers.Dense(9,activation='softmax')
 ])
 
-model.compile(optimizer='adam',
+adam = optimizers.Adam(learning_rate = 0.001,decay = 1e-6)
+model.compile(optimizer = adam,
               loss='categorical_crossentropy',
               metrics=['accuracy'])
               
@@ -88,8 +91,9 @@ validation_generator = train_data_generator.flow_from_directory(
  '''creating check-point path to store weights of increased validation accuracy'''
         
 filepath="D:/check_points_for_keras/weights-improvement-{epoch:02d}-{val_accuracy:.2f}.hdf5"
-checkpoint = ModelCheckpoint(filepath, monitor='val_accuracy', verbose=0, save_best_only=True, mode='max')
-callbacks_list = [checkpoint]
+callbacks =[EarlyStopping(patience=10, restore_best_weights=True), 
+           ReduceLROnPlateau(patience=2), 
+           ModelCheckpoint(filepath, monitor='val_accuracy', verbose=0, save_best_only=True, mode='max')]
 
 STEP_SIZE_TRAIN=train_generator.n//train_generator.batch_size
 STEP_SIZE_VALID=validation_generator.n//validation_generator.batch_size
@@ -121,3 +125,18 @@ plt.plot(epochs, val_loss, 'r', label='Training accuracy')
 plt.title('Training and Validation loss')
 plt.legend()
 plt.show()
+
+Y_pred = model.predict_generator(validation_generator)
+#print(len(Y_pred))
+y_pred = np.argmax(Y_pred, axis=1)
+
+#plotting confusion matrix
+print('Confusion Matrix')
+print(confusion_matrix(validation_generator.classes, y_pred))
+
+print('Classification Report') 
+target_names = ['Apple', 'Cherry', 'Corn','Grapes','Peach','Pepper_bell','Potato','Strawberry','Tomato'] 
+#target_names = ['Apple___Apple_scab','Apple___Black_rot','Apple___Cedar_apple_rust','Apple___healthy']
+#target_names = ['Cherry_(including_sour)___healthy','Cherry_(including_sour)___Powdery_mildew']
+#target_names = ['Strawberry___healthy','Strawberry___Leaf_scorch']
+print(classification_report(validation_generator.classes, y_pred, target_names=target_names))
